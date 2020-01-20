@@ -6,24 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ajaxについて</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <link href="hoge.css" rel="stylesheet">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="js/bootstrap.min.js"></script>
-    <title>Ajaxチュートリアル</title>
+    <title>Ajaxについて</title>
 </head>
 
 <body>
-    <h1>Ajaxでプチアプリを開発してみよう</h1>
+    <h1>Ajaxについて知ろう</h1>
     <div>
         <h2>Ajaxとは</h2>
         <p>Ajaxについては、
             <a href="https://wa3.i-3-i.info/word12672.html">このサイト</a>
             を参考にするとわかりやすいので、まずは見てください。
         </p>
-        <p>基本的には、↑のサイトにも書いてあるように、
+        <p>基本的には、上記のサイトにも書いてあるように、
             <span style="font-weight: bold">JavaScriptを使って非同期通信をするんだなあ</span>
             という風に理解できていれば問題ないです。
         </p>
@@ -34,17 +34,48 @@
             alt="非同期通信の例" width="400">
         <p>↑が非同期通信の例です。</p>
         <p>ざっくり説明すると、画面の遷移のない通信のことです。</p>
-        <p>よく色々なサイトで見ると思いますが、画面が白くなって、画面が遷移するようなものは逆に同期通信と言います。</p>
+        <p>よく色々なサイトで見ると思いますが、画面が白くなって、画面が遷移するようなものを同期通信と言います。</p>
     </div>
     <div>
         <h2>Ajaxの基本的な実装方法</h2>
-        <p>Ajaxは基本的にはこう書きます〜〜</p>
+        <p>Ajaxは基本的に以下の技術を用いて作っていきます。</p>
+        <ul style="list-style-type: square">
+            <li>XMLHttpRequest</li>
+            <li>JavaScript</li>
+            <li>DOM</li>
+            <li>XML</li>
+        </ul>
+        <p>Ajaxはこのように色々な技術を組み合わせて実装しています。</p>
+        <p>それぞれの技術を簡単に説明します。</p>
+        <p>&nbsp;</p>
+        <h3>XMLHttpRequest</h3>
+        <p>クライアントとサーバーの間でデータを伝送するための機能をクライアント側で提供する API です。</p>
+        <p>簡単にまとめると、ブラウザ上でサーバーと HTTP 通信を行うための API です。</p>
+        <p>この API を使って実装を行なっていくのが JavaScript です。</p>
+        <h3>JavaScript</h3>
+        <p>XMLHttpRequestはjavascriptの組み込みオブジェクトです</p>
+        <p>したがって、JavaScriptを使わないと実装ができません。</p>
+        <h3>DOM</h3>
+        <p>ここでは、HTMLや、XMLを「ツリー構造」として展開して、加工や変更をしやすくするためのものです。</p>
+        <h3>XML</h3>
+        <p>文書やデータの意味や構造を記述するためのマークアップ言語の一つ（HTMLと似たようなもの)です。</p>
+        <p>XMLはタグを自由に設定でき、そのタグに意味づけをすることができます。 </p>
+        <p>「XML」を使えば、複数のデータを同時にやりとりしても、どのデータがどの要素なのか一発で判明できるのが強みです。&nbsp;</p>
     </div>
     <div>
-        <h2>実際にAjaxを使って，百人一首アプリを作ってみよう</h2>
-        <h3>百人一首アプリ完成イメージ</h3>
+        <h2>百人一首アプリでAjaxの実装方法を学んでみよう</h2>
+        <h3>百人一首アプリイメージ</h3>
         <img src="https://i.gyazo.com/d1aa09221df162d79d8f0ca949728291.gif" alt="百人一首アプリ完成イメージ" width="562" /></a>
-        <h3>百人一首アプリチュートリアル</h3>
+        <p>実行ボタンを押すと、Ajaxを使用して百人一首のデータをサーバーから取ってきます。</p>
+        <p>その後、取ってきたデータを表示するだけの簡単なアプリとなっています。</p>
+        <h3>百人一首アプリの実装方法</h3>
+        <div class="codeprint">
+            <pre><code class="prettyprint">
+            int hoge = 1;
+            String hoge = "hoghoge";
+            String fuga = "fugafuga";
+            </code></pre>
+        </div>
     </div>
 </body>
 <script src="./app_sample.js"></script>
