@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+	<title>こんなことできるよー</title>
+	<style>
+		#section1{
+/*			background-color:#AAAAAA;*/
+			margin-bottom:100px;
+		}
+				#section2{
+/*			background-color:#888888;*/
+			margin-bottom:100px;
+		}
+				#section3{
+/*			background-color:#555555;*/
+			margin-bottom:100px;
+		}
+	</style>
+</head>
+
+<body>
+<section id="section1">
+  <h1>DOMとは</h1>
+	<p>DOMとは「Document Object Model」の略だ。直訳すると、「ドキュメントを物として扱うモデル」になる。プログラムからHTMLやXMLを自由に操作するための仕組みだ。</p>
+
+<p>例えばブラウザに表示される文字の色を変更したり、大きくしたりと、Webページの見た目をプログラムで処理をしたい場合があるだろう、しかし何もしていない状態のHTMLファイルではJavaScriptから手を出す事が出来ない。そこでファイルの特定の部分に目印を付けて「この部分」に「こういう事をしたい」という処理を可能にするための取り決めがDOMである。</p>
+
+	<p>DOMは以下のような特徴をもっている。</p>
+<ul>
+<li>ツリー構造とも呼ばれる階層構造を取る</li>
+<li>それぞれノードという言葉で説明される</li>
+<li>WEBページとJavaScriptなどのプログラミング言語とを繋ぐ</li>
+	</ul>
+	<p>詳しくは<a href="https://eng-entrance.com/what-is-dom">こちら</a></p>
+	
+	<h2>例</h2>
+  <p>
+    <word onmouseover="mapDict('I')" onmouseout="mapExit()">I</word>
+    <word onmouseover="mapDict('am')" onmouseout="mapExit()">am</word>
+    <word onmouseover="mapDict('a')" onmouseout="mapExit()">a</word>
+    <word onmouseover="mapDict('boy')" onmouseout="mapExit()">boy</word>
+    <word onmouseover="mapDict('.')" onmouseout="mapExit()">.</word>
+  </p>
+  <div id="display">[単語に mouse over してください。]</div>
+</section>
+	
+<section id="section2">
+  <h1>Canvasとは</h1>
+	<p>HTML5とCanvasは調べているとよく出てくる内容で、疑問に思った初心者の方も多いのではないでしょうか。CanvasはHTML5とJavaScriptを組み合わせて図を描画できる機能です。</p>
+	
+	<p>まずはCanvasとは何かについてを知っておきましょう。Canvasは、HTML5とJavaScriptを使ってブラウザ上で図を描くための仕様です。HTML5という現在主流になっているHTMLのバージョンでのみ、Canvasは使うことが出来ます。</p>
+
+<p>ただし、Canvas単体ではアニメーションさせることは出来ないので、JavaScriptを使って描画と再描画を繰り替えす必要があります。また、CanvasはFlashを使わずに図を描画することが可能です。なおかつ外部に画像ファイルを用意しなくても良いというのが大きなメリットになります。</p>
+	
+	<p>詳しくは<a href="https://www.sejuku.net/blog/85550">こちら</a></p>
+	
+	<h2>例</h2>
+  <canvas id="canvas1" width="400" height="300"></canvas>
+</section>
+	
+<section id="section3">
+  <h1>Ajaxとは</h1>
+  <p>Ajaxは理解するのが難しいため、簡単なアプリを作りながら説明します。</p>
+  <p><a href="ajax_tutorial.html">こちら</a>のページにいってください。</p>
+</section>
+</body>
+<script type="text/javascript" src="canvas.js"></script>
+<script type="text/javascript" src="dictionary.js"></script>
+</html>
